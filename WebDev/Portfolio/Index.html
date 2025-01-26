@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: linear-gradient(120deg, #ffffff, #001f3f);
+            color: #333;
+        }
+
+        header {
+            background: #001f3f;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        header .buttons {
+            margin-top: 1rem;
+        }
+
+        header .buttons a {
+            display: inline-block;
+            background: #007BFF;
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            margin: 0 0.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        header .buttons a:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        section {
+            padding: 2rem;
+            max-width: 1100px;
+            margin: auto;
+            background: #f4f4f4;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about img {
+            display: block;
+            margin: 0 auto 1rem;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #001f3f;
+        }
+
+        .skills ul, .projects ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skills ul li, .projects ul li {
+            margin: 1rem;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+            font-weight: bold;
+            color: #001f3f;
+        }
+
+        .projects img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .what-i-do {
+            text-align: center;
+        }
+
+        .what-i-do h2 {
+            margin-bottom: 1rem;
+            color: #001f3f;
+        }
+
+        .what-i-do .icons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .what-i-do .icons i {
+            font-size: 2.5rem;
+            margin: 0.5rem;
+            color: #007BFF;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .what-i-do .icons i:hover {
+            color: #0056b3;
+            transform: scale(1.2);
+        }
+
+        footer {
+            background: #001f3f;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+    <h1>Suhas Singh</h1>
+    <p>B.Tech. CSE | Student at Vellore Institute of Technology, Bhopal</p>
+    <div class="buttons">
+        <a href="#contact">Contact Me</a>
+        <a href="#resume">See My Resume</a>
+    </div>
+</header>
+
+<section class="about">
+    <h2>About Me</h2>
+    <img src="My_Pic.jpg" alt="My Image">
+    <p>B.Tech. in Computer Science | VIT Bhopal University | Aspiring Full-Stack Developer I am currently pursuing a Bachelor's degree in 
+        Computer Science from VIT Bhopal University. With a strong foundation in Java, data structures and algorithms (DSA), and full-stack 
+        web development, I am passionate about exploring diverse domains of computer science. My interests span across Artificial Intelligence, 
+        Machine Learning, Web Development, Networking, and Cloud Computing. I am eager to learn, innovate, and collaborate on projects that 
+        leverage cutting-edge technologies to solve real-world problems.</p>
+</section>
+
+<section class="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+        <li>AI & ML</li>
+    </ul>
+</section>
+
+<section class="what-i-do">
+    <h2>What I Do</h2>
+    <p> I specialize in building dynamic and user-friendly websites, solving complex Data Structures and Algorithms (DSA) challenges, and 
+        creating innovative projects in Artificial Intelligence (AI) and Machine Learning (ML). My journey combines creativity, logic, and a love 
+        for learning, allowing me to design solutions that are both efficient and impactful. Let's connect and create something amazing together!</p>
+    <div class="icons">
+        <i class="fab fa-html5"></i>
+        <i class="fab fa-css3-alt"></i>
+        <i class="fab fa-js"></i>
+        <i class="fab fa-react"></i>
+        <i class="fab fa-node"></i>
+    </div>
+</section>
+
+<section class="projects">
+    <h2>Projects</h2>
+    <ul>
+        <li>
+            <h3>Fake News Detection Website</h3>
+            <p>Developed a Fake News Detection website combining machine learning and web development. Integrated a user-friendly frontend with a 
+                Python-based backend using Flask, TfidfVectorizer, and PassiveAggressiveClassifier for real-time predictions.</p>
+            <img src="project1.png" alt="Project 1">
+        </li>
+        <li>
+            <h3>RFID-Based Door Lock System</h3>
+            <p>Developed an RFID-based door lock system using Arduino Uno, integrating RFID authentication, servo motor locking, and robust 
+                microcontroller programming for secure access control. Showcased expertise in hardware-software integration and IoT-focused 
+                automation.
+            </p>
+            <img src="project2.jpg" alt="Project 2">
+        </li>
+    </ul>
+</section>
+
+<section class="resume" id="resume">
+    <h2>Resume</h2>
+    <p><a href="https://drive.google.com/file/d/1uiXy7S3SJYxs17CjT7TjeqPyMz29Aq5T/view?usp=sharing" target="_blank">Download My Resume</a></p>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="singhsuhas77@gmail.com">singhsuhas77@gmail.com</a></p>
+    <p>Phone: (+91) 7735536503</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Suhas Singh. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
